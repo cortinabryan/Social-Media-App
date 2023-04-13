@@ -17,13 +17,35 @@ declare module "@mui/material/styles" {
     myVariant?: React.CSSProperties;
     // myCustomColor?: React.CSSProperties;
   }
+
+  // Palette - Or try to add it lol
+  interface Palette {
+    myCustomColor: Palette["primary"];
+    // myCustomColor2: Palette["primary"];
+    superDark: Palette["primary"];
+  }
+  interface PaletteOptions {
+    myCustomColor?: PaletteOptions["primary"];
+    myCustomColor2?: PaletteOptions["primary"];
+  }
+
+  // interface PaletteColor {
+  //   superDark: any;
+  // }
 }
+
+// interface Palette {
+//     custom: Palette["primary"];
+//   }
+//   interface PaletteOptions {
+//     custom: PaletteOptions["primary"];
+//   }
 
 // Update the Typography's variant prop options
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     myVariant: true;
-    // myCustomColor: true;
+    myCustomColor: true;
     h3: false;
   }
 }
@@ -50,9 +72,16 @@ const theme = createTheme({
     secondary: {
       main: red[500],
     },
-    // myCustomColor: {
-    //   main: green{500}
-    // },
+    myCustomColor: {
+      main: green[500],
+      superDark: green[800],
+      superLight: green[100],
+    } as any,
+    myCustomColor2: {
+      main: red[500],
+      superDark: red[800],
+      superLight: red[100],
+    } as any,
   },
   typography: {
     myVariant: {
@@ -63,6 +92,7 @@ const theme = createTheme({
     //   fontSize: "2rem",
     // },
   },
+  // spacing: 1, // default is 4 apparently lol
 });
 
 root.render(

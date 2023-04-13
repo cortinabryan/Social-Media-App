@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import { Button, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import MyCustomButton from "./components/MyCustomButton";
 
 // const App: React.FC = () => {
 //   return <div className="App"></div>;
@@ -10,11 +13,15 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Navbar />
-      <Typography variant="myVariant">THIS IS TYPOGRAPHYYYY!!!!</Typography>
-      <Button variant="contained">HAKUNA W/ MATATA</Button>
-      <Button sx={{ p: 3, m: 3 }} color="secondary" variant="outlined">
-        HAKUNA W/O MATATA
-      </Button>
+      <Home />
+      {/* <Typography variant="myVariant">THIS IS TYPOGRAPHYYYY!!!!</Typography>
+      <Typography variant="myVariant" sx={{ color: "myCustomColor2.main" }}>
+        IM TRYING TO SEE THE DIFFERENCE
+      </Typography>
+      <MyCustomButton variant="contained">HAKUNA MATATA</MyCustomButton>
+      <MyCustomButton sx={{ p: 3, m: 3 }} color="secondary" variant="outlined">
+        ALOTTA MATATA
+      </MyCustomButton> */}
     </div>
   );
 };
