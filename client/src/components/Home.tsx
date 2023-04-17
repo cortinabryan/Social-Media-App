@@ -24,7 +24,7 @@ export default function VariableWidthGrid() {
           <Item>News Feed?</Item>
         </Grid>
         <Grid xs={2}>
-          <Item>Friend's List, right side</Item>
+          <Item>Friend's List, Right side</Item>
         </Grid>
       </Grid>
     </Box>

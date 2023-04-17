@@ -67,10 +67,10 @@ const root = ReactDOM.createRoot(
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#ccc",
+      main: "#234E70",
     },
     secondary: {
-      main: red[500],
+      main: "#EEA47FFF",
     },
     myCustomColor: {
       main: green[500],
