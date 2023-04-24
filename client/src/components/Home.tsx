@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
 import { orange } from "@mui/material/colors";
+import UserInfo from "./UserInfo";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -18,7 +19,8 @@ export default function VariableWidthGrid() {
     <Box sx={{ flexGrow: 1, p: 5 }}>
       <Grid container spacing={3} color={orange[500]}>
         <Grid xs={2}>
-          <Item>User Info Section, Left side</Item>
+          <UserInfo />
+          {/* <Item>User Info Section, Left side</Item> */}
         </Grid>
         <Grid xs={8}>
           <Item>News Feed?</Item>

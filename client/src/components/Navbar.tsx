@@ -157,7 +157,7 @@ export default function PrimarySearchAppBar() {
       </MenuItem>
     </Menu>
   );
-
+  const test = false;
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
