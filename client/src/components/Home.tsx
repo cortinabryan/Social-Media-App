@@ -5,6 +5,8 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
 import { orange } from "@mui/material/colors";
 import UserInfo from "./UserInfo";
+import NewsFeed from "./NewsFeed";
+import FriendsList from "./FriendsList";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -23,10 +25,12 @@ export default function VariableWidthGrid() {
           {/* <Item>User Info Section, Left side</Item> */}
         </Grid>
         <Grid xs={8}>
-          <Item>News Feed?</Item>
+          <NewsFeed />
+          {/* <Item>News Feed?</Item> */}
         </Grid>
         <Grid xs={2}>
-          <Item>Friend's List, Right side</Item>
+          <FriendsList />
+          {/* <Item>Friend's List, Right side</Item> */}
         </Grid>
       </Grid>
     </Box>

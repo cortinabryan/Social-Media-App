@@ -46,7 +46,7 @@ declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     myVariant: true;
     myCustomColor: true;
-    h3: false;
+    // h3: false;
   }
 }
 
