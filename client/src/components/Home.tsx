@@ -20,11 +20,11 @@ export default function VariableWidthGrid() {
   return (
     <Box sx={{ flexGrow: 1, p: 5 }}>
       <Grid container spacing={3} color={orange[500]}>
-        <Grid xs={2}>
+        <Grid xs={2.5}>
           <UserInfo />
           {/* <Item>User Info Section, Left side</Item> */}
         </Grid>
-        <Grid xs={8}>
+        <Grid xs={7.5}>
           <NewsFeed />
           {/* <Item>News Feed?</Item> */}
         </Grid>
