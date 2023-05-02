@@ -17,7 +17,7 @@ const UserInfo = () => {
           color: "secondary.main",
           padding: "1rem",
           margin: "1rem",
-          height: "100px",
+          // height: "100px",
           // width: "200px",
           border: "5px solid black",
           display: "flex",
@@ -28,9 +28,10 @@ const UserInfo = () => {
           },
         }}
       >
-        <Box id="inner" sx={{ flexDirection: "row", bgcolor: "red" }}>
-          <Box id="top" sx={{ bgcolor: "purple", display: "flex" }}>
-            <Avatar alt="Mr.Guy" src="/static/images/avatar/2.jpg" />
+        {/* <Box id="inner" sx={{ flexDirection: "row", bgcolor: "red" }}> */}
+        <Box id="inner" sx={{ flexDirection: "row" }}>
+          <Box id="top" sx={{ display: "flex" }}>
+            <Avatar alt="Izzy" src="/static/images/avatar/2.jpg" />
             <Typography
               variant="h6"
               sx={{
@@ -55,7 +56,7 @@ const UserInfo = () => {
               }}
             />
           </Box>
-          <Divider variant="middle" sx={{ bgcolor: "green", height: "2px" }} />
+          <Divider variant="middle" sx={{ bgcolor: "green", my: ".5rem" }} />
           <Box id="middle" sx={{ display: "flex" }}>
             <LocationOnIcon
               sx={{
@@ -69,7 +70,7 @@ const UserInfo = () => {
               }}
             />
             <Typography
-              variant="subtitle1"
+              variant="h6"
               sx={{ mx: ".5rem", mt: ".5rem", fontSize: "1rem" }}
             >
               Australia
@@ -88,12 +89,54 @@ const UserInfo = () => {
               }}
             />
             <Typography
-              variant="subtitle1"
+              variant="h6"
               sx={{ mx: ".5rem", mt: ".5rem", fontSize: "1rem" }}
             >
               UFC
             </Typography>
           </Box>
+          <Divider variant="middle" sx={{ bgcolor: "green", my: ".5rem" }} />
+          <Box id="middle" sx={{ display: "flex", flexDirection: "column" }}>
+            <Box sx={{ display: "inherit", justifyContent: "space-between" }}>
+              <Typography
+                variant="h6"
+                sx={{ mx: ".5rem", mt: ".5rem", fontSize: ".8rem" }}
+              >
+                Who viewed your profile
+              </Typography>
+              <Typography
+                variant="h6"
+                sx={{
+                  mx: ".5rem",
+                  mt: ".5rem",
+                  fontSize: "1rem",
+                  color: "#fff",
+                }}
+              >
+                4628
+              </Typography>
+            </Box>
+            <Box sx={{ display: "inherit", justifyContent: "space-between" }}>
+              <Typography
+                variant="h6"
+                sx={{ mx: ".5rem", mt: ".5rem", fontSize: ".8rem" }}
+              >
+                Impressions of your post
+              </Typography>
+              <Typography
+                variant="h6"
+                sx={{
+                  mx: ".5rem",
+                  mt: ".5rem",
+                  fontSize: "1rem",
+                  color: "#fff",
+                }}
+              >
+                8920
+              </Typography>
+            </Box>
+          </Box>
+          <Divider variant="middle" sx={{ bgcolor: "green", my: ".5rem" }} />
         </Box>
       </Box>
     </>
