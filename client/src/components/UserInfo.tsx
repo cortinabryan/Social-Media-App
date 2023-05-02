@@ -1,16 +1,19 @@
 import React from "react";
-import { Box } from "@mui/material/";
+import { Box, Container } from "@mui/material/";
 import Avatar from "@mui/material/Avatar";
 import { Typography } from "@mui/material";
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import Divider from "@mui/material/Divider";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
-
+import TwitterIcon from "@mui/icons-material/Twitter";
+import EditIcon from "@mui/icons-material/Edit";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
 const UserInfo = () => {
   return (
     <>
-      <Box
+      <Container
         id="outter"
         sx={{
           backgroundColor: "primary.main",
@@ -76,7 +79,7 @@ const UserInfo = () => {
               Australia
             </Typography>
           </Box>
-          <Box id="middle" sx={{ display: "flex" }}>
+          <Box id="middle2" sx={{ display: "flex" }}>
             <WorkOutlineIcon
               sx={{
                 mt: ".5rem",
@@ -137,8 +140,130 @@ const UserInfo = () => {
             </Box>
           </Box>
           <Divider variant="middle" sx={{ bgcolor: "green", my: ".5rem" }} />
+          <Box id="Socials">
+            <Typography
+              variant="h5"
+              sx={{ mx: ".5rem", my: ".5rem", fontSize: "1.2rem" }}
+            >
+              Social Profiles
+            </Typography>
+            <Box
+              id="twitter"
+              sx={{ display: "flex", justifyContent: "space-between" }}
+            >
+              <Box sx={{ display: "inherit" }}>
+                <TwitterIcon
+                  sx={{
+                    color: "#fff",
+                    fontSize: "2rem",
+                    "&:hover": {
+                      cursor: "pointer",
+                    },
+                  }}
+                />
+                <Box id="twitter-inner">
+                  <Typography
+                    variant="h6"
+                    sx={{ fontSize: ".8rem", mx: ".8rem" }}
+                  >
+                    Twitter
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    sx={{ fontSize: ".7rem", mx: ".8rem", color: "grey" }}
+                  >
+                    Social Network
+                  </Typography>
+                </Box>
+              </Box>
+              <EditIcon
+                sx={{
+                  color: "#fff",
+                  "&:hover": {
+                    cursor: "pointer",
+                  },
+                }}
+              />
+            </Box>
+            <Box
+              id="linkedin"
+              sx={{ display: "flex", justifyContent: "space-between" }}
+            >
+              <Box sx={{ display: "inherit" }}>
+                <LinkedInIcon
+                  sx={{
+                    color: "#fff",
+                    fontSize: "2rem",
+                    "&:hover": {
+                      cursor: "pointer",
+                    },
+                  }}
+                />
+                <Box id="linkedin-inner">
+                  <Typography
+                    variant="h6"
+                    sx={{ fontSize: ".8rem", mx: ".8rem" }}
+                  >
+                    LinkedIn
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    sx={{ fontSize: ".7rem", mx: ".8rem", color: "grey" }}
+                  >
+                    Network Platform
+                  </Typography>
+                </Box>
+              </Box>
+              <EditIcon
+                sx={{
+                  color: "#fff",
+                  "&:hover": {
+                    cursor: "pointer",
+                  },
+                }}
+              />
+            </Box>
+            <Box
+              id="facebook"
+              sx={{ display: "flex", justifyContent: "space-between" }}
+            >
+              <Box sx={{ display: "inherit" }}>
+                <FacebookIcon
+                  sx={{
+                    color: "#fff",
+                    fontSize: "2rem",
+                    "&:hover": {
+                      cursor: "pointer",
+                    },
+                  }}
+                />
+                <Box id="facebook-inner">
+                  <Typography
+                    variant="h6"
+                    sx={{ fontSize: ".8rem", mx: ".8rem" }}
+                  >
+                    Facebook
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    sx={{ fontSize: ".7rem", mx: ".8rem", color: "grey" }}
+                  >
+                    Social Network
+                  </Typography>
+                </Box>
+              </Box>
+              <EditIcon
+                sx={{
+                  color: "#fff",
+                  "&:hover": {
+                    cursor: "pointer",
+                  },
+                }}
+              />
+            </Box>
+          </Box>
         </Box>
-      </Box>
+      </Container>
     </>
   );
 };
