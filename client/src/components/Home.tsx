@@ -7,6 +7,7 @@ import { orange } from "@mui/material/colors";
 import UserInfo from "./UserInfo";
 import NewsFeed from "./NewsFeed";
 import FriendsList from "./FriendsList";
+import Post from "./Post";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -25,6 +26,7 @@ export default function VariableWidthGrid() {
           {/* <Item>User Info Section, Left side</Item> */}
         </Grid>
         <Grid xs={7.5}>
+          <Post />
           <NewsFeed />
           {/* <Item>News Feed?</Item> */}
         </Grid>
