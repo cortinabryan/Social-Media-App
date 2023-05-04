@@ -1,32 +1,88 @@
 import React from "react";
-import { Box } from "@mui/material/";
+import { Box, Container, Divider } from "@mui/material/";
 import Avatar from "@mui/material/Avatar";
-import Paper from "@mui/material/Paper";
+import { Typography, TextField } from "@mui/material";
+// import Divider from "@mui/material/Divider";
 
 const Post = () => {
   return (
     <>
-      {" "}
-      <Box
+      <Container
         sx={{
           backgroundColor: "primary.main",
           color: "secondary.main",
           padding: "1rem",
           margin: "1rem",
-          height: "100px",
+          minHeight: "10rem",
           display: "flex",
+          flexDirection: "column",
           border: "5px solid black",
+          // justifyContent: "",
           "&:hover": {
             backgroundColor: "myCustomColor.superDark",
           },
         }}
       >
-        <Avatar alt="Izzy" src="/static/images/avatar/2.jpg" />
-        <Paper variant="outlined" elevation={12} />
-        Whats on your mind?
-      </Box>
+        <Box
+          id="post-top-row"
+          sx={{ display: "inherit", flexDirection: "row" }}
+        >
+          <Avatar
+            alt="Izzy"
+            src="/static/images/avatar/2.jpg"
+            sx={{ width: 60, height: 60 }}
+          />
+          <Box
+            sx={{
+              bgcolor: "#2D2D2D",
+              width: "70rem",
+              height: "4rem",
+              mx: "1rem",
+              borderRadius: "5rem",
+              display: "inherit",
+            }}
+          >
+            <TextField
+              fullWidth
+              label="Whats on your mind?"
+              id="fullWidth"
+              variant="standard"
+              InputProps={{
+                disableUnderline: true,
+              }}
+              sx={{ ml: "1.5rem" }}
+            />
+          </Box>
+        </Box>
+        <Divider
+          variant="middle"
+          sx={{
+            bgcolor: "green",
+            my: "1rem",
+          }}
+        />
+        <Box id="post-bottom-row"></Box>
+      </Container>
     </>
   );
 };
 
 export default Post;
+
+// <Box
+//         sx={{
+//           backgroundColor: "primary.main",
+//           color: "secondary.main",
+//           padding: "1rem",
+//           margin: "1rem",
+//           height: "100px",
+//           display: "flex",
+//           border: "5px solid black",
+//           "&:hover": {
+//             backgroundColor: "myCustomColor.superDark",
+//           },
+//         }}
+//       >
+//         <Avatar alt="Izzy" src="/static/images/avatar/2.jpg" />
+//         Whats on your mind?
+//       </Box>

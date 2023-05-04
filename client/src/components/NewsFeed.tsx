@@ -1,17 +1,17 @@
 import React from "react";
-import { Box } from "@mui/material/";
+import { Box, Container } from "@mui/material/";
 
 const NewsFeed = () => {
   return (
     <>
-      <Box
+      <Container
         sx={{
           backgroundColor: "primary.main",
           color: "secondary.main",
           padding: "1rem",
           margin: "1rem",
           mt: "2rem",
-          height: "500px",
+          minHeight: "30rem",
           // width: "60rem",
           border: "5px solid black",
           "&:hover": {
@@ -20,7 +20,7 @@ const NewsFeed = () => {
         }}
       >
         News Feed
-      </Box>
+      </Container>
     </>
   );
 };
