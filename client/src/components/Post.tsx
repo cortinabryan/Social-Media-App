@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Container, Divider } from "@mui/material/";
 import Avatar from "@mui/material/Avatar";
 import { Typography, TextField } from "@mui/material";
+import ImageIcon from "@mui/icons-material/Image";
 // import Divider from "@mui/material/Divider";
 
 const Post = () => {
@@ -61,7 +62,12 @@ const Post = () => {
             my: "1rem",
           }}
         />
-        <Box id="post-bottom-row"></Box>
+        <Box id="post-bottom-row" sx={{ display: "inherit" }}>
+          <ImageIcon sx={{ color: "#fff" }} />
+          <Typography variant="subtitle2" sx={{ mt: "2px", mx: "1.5rem" }}>
+            Image
+          </Typography>
+        </Box>
       </Container>
     </>
   );
