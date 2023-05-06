@@ -1,8 +1,11 @@
 import React from "react";
-import { Box, Container, Divider } from "@mui/material/";
+import { Box, Container, Divider, Button } from "@mui/material/";
 import Avatar from "@mui/material/Avatar";
 import { Typography, TextField } from "@mui/material";
 import ImageIcon from "@mui/icons-material/Image";
+import AttachFileIcon from "@mui/icons-material/AttachFile";
+import MicIcon from "@mui/icons-material/Mic";
+import VideocamIcon from "@mui/icons-material/Videocam";
 // import Divider from "@mui/material/Divider";
 
 const Post = () => {
@@ -62,11 +65,80 @@ const Post = () => {
             my: "1rem",
           }}
         />
-        <Box id="post-bottom-row" sx={{ display: "inherit" }}>
-          <ImageIcon sx={{ color: "#fff" }} />
-          <Typography variant="subtitle2" sx={{ mt: "2px", mx: "1.5rem" }}>
-            Image
-          </Typography>
+        <Box
+          id="post-bottom-row"
+          sx={{
+            display: "flex",
+            bgcolor: "purple",
+            justifyContent: "flex-start",
+          }}
+        >
+          <Box
+            id="post-bottom-image"
+            sx={{
+              display: "inherit",
+              justifyContent: "start",
+              py: "6px",
+              px: "16px",
+            }}
+          >
+            <ImageIcon sx={{ color: "#fff" }} />
+            <Typography variant="subtitle2" sx={{ mt: "2px", mx: "1.5rem" }}>
+              Image
+            </Typography>
+          </Box>
+          <Box
+            id="post-bottom-clip"
+            sx={{
+              display: "inherit",
+              justifyContent: "start",
+              py: "6px",
+              px: "16px",
+            }}
+          >
+            <VideocamIcon sx={{ color: "#fff" }} />
+            <Typography variant="subtitle2" sx={{ mt: "2px", mx: "1.5rem" }}>
+              Clip
+            </Typography>
+          </Box>
+          <Box
+            id="post-bottom-attachment"
+            sx={{
+              display: "inherit",
+              justifyContent: "start",
+              py: "6px",
+              px: "16px",
+            }}
+          >
+            <AttachFileIcon sx={{ color: "#fff" }} />
+            <Typography variant="subtitle2" sx={{ mt: "2px", mx: "1.5rem" }}>
+              Attachment
+            </Typography>
+          </Box>
+          <Box
+            id="post-bottom-audio"
+            sx={{
+              display: "inherit",
+              justifyContent: "start",
+              py: "6px",
+              px: "16px",
+            }}
+          >
+            <MicIcon sx={{ color: "#fff" }} />
+            <Typography variant="subtitle2" sx={{ mt: "2px", mx: "1.5rem" }}>
+              Audio
+            </Typography>
+          </Box>
+          <Button
+            variant="contained"
+            sx={{
+              bgcolor: "darkgreen",
+              display: "flex",
+              justifySelf: "end",
+            }}
+          >
+            Post
+          </Button>
         </Box>
       </Container>
     </>
