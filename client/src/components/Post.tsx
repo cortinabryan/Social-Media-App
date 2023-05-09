@@ -69,8 +69,9 @@ const Post = () => {
           id="post-bottom-row"
           sx={{
             display: "flex",
-            bgcolor: "purple",
-            justifyContent: "flex-start",
+            // bgcolor: "purple",
+            justifyContent: "space-between",
+            // ml: "5px",
           }}
         >
           <Box
@@ -80,10 +81,13 @@ const Post = () => {
               justifyContent: "start",
               py: "6px",
               px: "16px",
+              "&:hover": {
+                cursor: "pointer",
+              },
             }}
           >
             <ImageIcon sx={{ color: "#fff" }} />
-            <Typography variant="subtitle2" sx={{ mt: "2px", mx: "1.5rem" }}>
+            <Typography variant="subtitle2" sx={{ mt: "2px", mx: ".5rem" }}>
               Image
             </Typography>
           </Box>
@@ -94,10 +98,13 @@ const Post = () => {
               justifyContent: "start",
               py: "6px",
               px: "16px",
+              "&:hover": {
+                cursor: "pointer",
+              },
             }}
           >
             <VideocamIcon sx={{ color: "#fff" }} />
-            <Typography variant="subtitle2" sx={{ mt: "2px", mx: "1.5rem" }}>
+            <Typography variant="subtitle2" sx={{ mt: "2px", mx: ".5rem" }}>
               Clip
             </Typography>
           </Box>
@@ -108,10 +115,13 @@ const Post = () => {
               justifyContent: "start",
               py: "6px",
               px: "16px",
+              "&:hover": {
+                cursor: "pointer",
+              },
             }}
           >
             <AttachFileIcon sx={{ color: "#fff" }} />
-            <Typography variant="subtitle2" sx={{ mt: "2px", mx: "1.5rem" }}>
+            <Typography variant="subtitle2" sx={{ mt: "2px", mx: ".5rem" }}>
               Attachment
             </Typography>
           </Box>
@@ -122,10 +132,13 @@ const Post = () => {
               justifyContent: "start",
               py: "6px",
               px: "16px",
+              "&:hover": {
+                cursor: "pointer",
+              },
             }}
           >
             <MicIcon sx={{ color: "#fff" }} />
-            <Typography variant="subtitle2" sx={{ mt: "2px", mx: "1.5rem" }}>
+            <Typography variant="subtitle2" sx={{ mt: "2px", mx: ".5rem" }}>
               Audio
             </Typography>
           </Box>
@@ -134,7 +147,10 @@ const Post = () => {
             sx={{
               bgcolor: "darkgreen",
               display: "flex",
-              justifySelf: "end",
+              ml: "auto",
+              mr: "2rem",
+              borderRadius: "5rem",
+              // justifySelf: "end",
             }}
           >
             Post
