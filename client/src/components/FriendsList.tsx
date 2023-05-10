@@ -12,7 +12,7 @@ const FriendsList = () => {
           margin: "1rem",
           minHeight: "10rem",
           // width: "100px",
-          border: "5px solid black",
+          border: "3px solid black",
           "&:hover": {
             backgroundColor: "myCustomColor.superDark",
           },

@@ -20,8 +20,7 @@ const Post = () => {
           minHeight: "10rem",
           display: "flex",
           flexDirection: "column",
-          border: "5px solid black",
-          // justifyContent: "",
+          border: "3px solid black",
           "&:hover": {
             backgroundColor: "myCustomColor.superDark",
           },
@@ -87,7 +86,7 @@ const Post = () => {
             }}
           >
             <ImageIcon sx={{ color: "#fff" }} />
-            <Typography variant="subtitle2" sx={{ mt: "2px", mx: ".5rem" }}>
+            <Typography variant="subtitle2" sx={{ mt: "2px", ml: ".5rem" }}>
               Image
             </Typography>
           </Box>
@@ -104,7 +103,7 @@ const Post = () => {
             }}
           >
             <VideocamIcon sx={{ color: "#fff" }} />
-            <Typography variant="subtitle2" sx={{ mt: "2px", mx: ".5rem" }}>
+            <Typography variant="subtitle2" sx={{ mt: "2px", ml: ".5rem" }}>
               Clip
             </Typography>
           </Box>
@@ -121,7 +120,7 @@ const Post = () => {
             }}
           >
             <AttachFileIcon sx={{ color: "#fff" }} />
-            <Typography variant="subtitle2" sx={{ mt: "2px", mx: ".5rem" }}>
+            <Typography variant="subtitle2" sx={{ mt: "2px", ml: ".5rem" }}>
               Attachment
             </Typography>
           </Box>
@@ -138,7 +137,7 @@ const Post = () => {
             }}
           >
             <MicIcon sx={{ color: "#fff" }} />
-            <Typography variant="subtitle2" sx={{ mt: "2px", mx: ".5rem" }}>
+            <Typography variant="subtitle2" sx={{ mt: "2px", ml: ".5rem" }}>
               Audio
             </Typography>
           </Box>

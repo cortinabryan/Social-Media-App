@@ -22,7 +22,7 @@ const UserInfo = () => {
           margin: "1rem",
           // height: "100px",
           // width: "200px",
-          border: "5px solid black",
+          border: "3px solid black",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
