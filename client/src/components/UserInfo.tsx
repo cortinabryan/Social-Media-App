@@ -34,13 +34,17 @@ const UserInfo = () => {
         {/* <Box id="inner" sx={{ flexDirection: "row", bgcolor: "red" }}> */}
         <Box id="inner" sx={{ flexDirection: "row" }}>
           <Box id="top" sx={{ display: "flex" }}>
-            <Avatar alt="Izzy" src="/static/images/avatar/2.jpg" />
+            <Avatar
+              alt="Izzy"
+              src="images/stylebender-headshot.jpg"
+              sx={{ width: 60, height: 60 }}
+            />
             <Typography
               variant="h6"
               sx={{
-                mx: ".5rem",
+                mx: "1rem",
                 mt: ".5rem",
-                fontSize: "1rem",
+                fontSize: "1.2rem",
                 // verticalAlign: "super",
                 // allignSelf: "center",
               }}

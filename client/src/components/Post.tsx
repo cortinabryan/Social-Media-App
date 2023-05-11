@@ -32,7 +32,7 @@ const Post = () => {
         >
           <Avatar
             alt="Izzy"
-            src="/static/images/avatar/2.jpg"
+            src="images/stylebender-headshot.jpg"
             sx={{ width: 60, height: 60 }}
           />
           <Box
