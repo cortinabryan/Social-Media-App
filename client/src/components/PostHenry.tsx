@@ -18,6 +18,7 @@ const PostHenry = () => {
           flexDirection: "column",
           // width: "60rem",
           border: "3px solid black",
+          borderRadius: "1rem",
           "&:hover": {
             backgroundColor: "myCustomColor.superDark",
           },
@@ -34,10 +35,18 @@ const PostHenry = () => {
           <Avatar
             alt="Henry"
             src="/images/triplec-headshot.jpg"
-            sx={{ width: 60, height: 60 }}
+            sx={{ width: 60, height: 60, ":hover": { cursor: "pointer" } }}
           />
           <Box id="newsfeed-info" sx={{ mx: ".5rem", my: ".5rem" }}>
-            <Typography variant="h6" sx={{ ml: ".5rem", fontSize: "1rem" }}>
+            <Typography
+              variant="h6"
+              sx={{
+                ml: ".5rem",
+                fontSize: "1rem",
+                color: "white",
+                ":hover": { cursor: "pointer", color: "secondary.main" },
+              }}
+            >
               Henry Cejudo
             </Typography>
             <Typography
@@ -63,7 +72,7 @@ const PostHenry = () => {
           id="newsfeed-bottom"
           sx={{ display: "flex", my: ".5rem", flexDirection: "column" }}
         >
-          <Typography variant="subtitle1" sx={{ my: ".5rem" }}>
+          <Typography variant="subtitle1" sx={{ my: ".5rem", color: "white" }}>
             Here to remind everybody to BEND THE KNEE!
           </Typography>
           <img src="images/triplec.jpg" alt="" className="image-newsfeed" />

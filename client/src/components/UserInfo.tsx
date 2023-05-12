@@ -23,6 +23,7 @@ const UserInfo = () => {
           // height: "100px",
           // width: "200px",
           border: "3px solid black",
+          borderRadius: "1rem",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -37,7 +38,7 @@ const UserInfo = () => {
             <Avatar
               alt="Izzy"
               src="images/stylebender-headshot.jpg"
-              sx={{ width: 60, height: 60 }}
+              sx={{ width: 60, height: 60, ":hover": { cursor: "pointer" } }}
             />
             <Typography
               variant="h6"
@@ -45,8 +46,8 @@ const UserInfo = () => {
                 mx: "1rem",
                 mt: ".5rem",
                 fontSize: "1.2rem",
-                // verticalAlign: "super",
-                // allignSelf: "center",
+                color: "white",
+                ":hover": { cursor: "pointer", color: "secondary.main" },
               }}
             >
               Israel Adesanya

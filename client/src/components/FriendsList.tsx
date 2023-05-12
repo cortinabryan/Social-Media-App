@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Container } from "@mui/material/";
+import { Box, Container, Avatar, Typography } from "@mui/material/";
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
 
 const FriendsList = () => {
   return (
@@ -13,12 +14,94 @@ const FriendsList = () => {
           minHeight: "10rem",
           // width: "100px",
           border: "3px solid black",
+          borderRadius: "1rem",
+          display: "flex",
+          flexDirection: "column",
           "&:hover": {
             backgroundColor: "myCustomColor.superDark",
           },
         }}
       >
-        Friend's List, Right side
+        <Typography variant="h6" sx={{ mb: "1rem" }}>
+          Friends List
+        </Typography>
+        <Box
+          id="friends-list-inner"
+          sx={{ display: "flex", flexDirection: "column" }}
+        >
+          <Box
+            id="aljo-box"
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              mb: ".5rem",
+            }}
+          >
+            <Avatar
+              alt="aljamain"
+              src="/images/aljo-headshot.jpg"
+              sx={{ width: 60, height: 60 }}
+            />
+            <Box id="aljo-typography" sx={{ mx: ".5rem", my: ".5rem" }}>
+              <Typography variant="h6" sx={{ ml: ".5rem", fontSize: "1rem" }}>
+                Aljamain Sterling
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                sx={{ ml: ".5rem", fontSize: ".7rem", color: "grey" }}
+              >
+                Uniondale, NY
+              </Typography>
+            </Box>
+            <PersonAddIcon
+              sx={{
+                ml: "auto",
+                mt: ".5rem",
+                color: "green",
+                "&:hover": {
+                  cursor: "pointer",
+                },
+              }}
+            />
+          </Box>
+          <Box
+            id="merab-box"
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              mb: ".5rem",
+            }}
+          >
+            <Avatar
+              alt="merab"
+              src="/images/merab-headshot.jpg"
+              sx={{ width: 60, height: 60 }}
+            />
+            <Box id="merab-typography" sx={{ mx: ".5rem", my: ".5rem" }}>
+              <Typography variant="h6" sx={{ ml: ".5rem", fontSize: "1rem" }}>
+                Merab Dvalishvili
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                sx={{ ml: ".5rem", fontSize: ".7rem", color: "grey" }}
+              >
+                Tbilisi, Georgia
+              </Typography>
+            </Box>
+            <PersonAddIcon
+              sx={{
+                ml: "auto",
+                mt: ".5rem",
+                color: "green",
+                "&:hover": {
+                  cursor: "pointer",
+                },
+              }}
+            />
+          </Box>
+        </Box>
       </Container>
     </>
   );

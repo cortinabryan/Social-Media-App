@@ -21,6 +21,7 @@ const Post = () => {
           display: "flex",
           flexDirection: "column",
           border: "3px solid black",
+          borderRadius: "1rem",
           "&:hover": {
             backgroundColor: "myCustomColor.superDark",
           },
@@ -33,7 +34,7 @@ const Post = () => {
           <Avatar
             alt="Izzy"
             src="images/stylebender-headshot.jpg"
-            sx={{ width: 60, height: 60 }}
+            sx={{ width: 60, height: 60, ":hover": { cursor: "pointer" } }}
           />
           <Box
             sx={{
