@@ -44,7 +44,15 @@ const FriendsList = () => {
               sx={{ width: 60, height: 60 }}
             />
             <Box id="aljo-typography" sx={{ mx: ".5rem", my: ".5rem" }}>
-              <Typography variant="h6" sx={{ ml: ".5rem", fontSize: "1rem" }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  ml: ".5rem",
+                  fontSize: "1rem",
+                  color: "white",
+                  "&:hover": { color: "secondary.main" },
+                }}
+              >
                 Aljamain Sterling
               </Typography>
               <Typography
@@ -80,7 +88,15 @@ const FriendsList = () => {
               sx={{ width: 60, height: 60 }}
             />
             <Box id="merab-typography" sx={{ mx: ".5rem", my: ".5rem" }}>
-              <Typography variant="h6" sx={{ ml: ".5rem", fontSize: "1rem" }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  ml: ".5rem",
+                  fontSize: "1rem",
+                  color: "white",
+                  ":hover": { color: "secondary.main" },
+                }}
+              >
                 Merab Dvalishvili
               </Typography>
               <Typography
