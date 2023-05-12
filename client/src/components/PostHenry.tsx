@@ -61,8 +61,10 @@ const PostHenry = () => {
               ml: "auto",
               mr: "2rem",
               mt: ".5rem",
-              color: "green",
+              color: "teal",
+              borderRadius: "1rem",
               "&:hover": {
+                bgcolor: "white",
                 cursor: "pointer",
               },
             }}
