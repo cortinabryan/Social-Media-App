@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container, Avatar, Typography } from "@mui/material/";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import PersonRemoveIcon from "@mui/icons-material/PersonRemove";
 
 const FriendsList = () => {
   return (
@@ -62,7 +63,7 @@ const FriendsList = () => {
                 Uniondale, NY
               </Typography>
             </Box>
-            <PersonAddIcon
+            <PersonRemoveIcon
               sx={{
                 ml: "auto",
                 mt: ".5rem",
@@ -106,7 +107,7 @@ const FriendsList = () => {
                 Tbilisi, Georgia
               </Typography>
             </Box>
-            <PersonAddIcon
+            <PersonRemoveIcon
               sx={{
                 ml: "auto",
                 mt: ".5rem",
