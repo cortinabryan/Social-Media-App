@@ -11,6 +11,7 @@ import helmet from "helmet"; // Request Safety
 import morgan from "morgan"; // Login
 import path from "path";
 import { fileURLToPath } from "url";
+import { register } from "./controllers/auth.js";
 
 // const app = express();
 // const PORT = 5000;
@@ -52,6 +53,10 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
+
+/* ROUTES WITH FILES */
+
+app.post("/auth/register", upload.single("picture"), register);
 
 /* MONGOOSE SETUP */
 
