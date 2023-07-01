@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Navbar from "./scenes/navbar/Navbar";
+import Home from "./scenes/homePage/Home";
 import Test from "./components/Test";
 import { Button, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
