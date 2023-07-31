@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import { ThemeProvider, createTheme } from "@mui/material";
 import { red, green, purple } from "@mui/material/colors";
+import { BrowserRouter } from "react-router-dom";
 
 // Typography
 declare module "@mui/material/styles" {
@@ -96,9 +97,9 @@ const theme = createTheme({
 });
 
 root.render(
-  <StrictMode>
+  <BrowserRouter>
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>
-  </StrictMode>
+  </BrowserRouter>
 );
